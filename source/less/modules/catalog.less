@@ -7,3 +7,32 @@
 .catalog__item {
   margin-bottom: 25px;
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .catalog {
+    width: 1220px;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+}
