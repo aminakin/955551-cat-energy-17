@@ -1,17 +1,25 @@
 .catalog__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  margin-top: 40px;
+  padding: 0;
 }
 
 .catalog__item {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  padding: 0 20px;
+  border-top: 1px solid #e6e6e6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .catalog {
     width: 708px;
     margin: 0 auto;
+
+    .catalog__item:last-child {
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+    }
   }
 
   .catalog__list {
@@ -24,12 +32,17 @@
   .catalog__item {
     width: 324px;
     text-align: center;
+    box-sizing: border-box;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: @desktop-width) {
   .catalog {
     width: 1220px;
+  }
+
+  .catalog__list {
+    margin-top: 43px;
   }
 
   .catalog__item {

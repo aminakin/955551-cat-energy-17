@@ -4,4 +4,70 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  margin: 22px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--vkontakte {
+  width: 22px;
+  height: 12px;
+  background-image: url("../img/icon-vk.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-vk-green.svg");
+  }
+}
+
+.social__link--facebook {
+  width: 10px;
+  height: 19px;
+  background-image: url("../img/icon-fb.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-fb-green.svg");
+  }
+}
+
+.social__link--instagram {
+  width: 17px;
+  height: 17px;
+  margin-right: 40px;
+  margin-left: 37px;
+  background-image: url("../img/icon-insta.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-insta-green.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__link--vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram {
+    width: 23px;
+    height: 23px;
+    margin-right: 28px;
+    margin-left: 28px;
+  }
+
+  .social__link--facebook {
+    width: 14px;
+    height: 28px;
+  }
 }

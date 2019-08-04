@@ -9,7 +9,7 @@
   display: block;
   font-size: 20px;
   text-align: center;
-  padding: 24px 0;
+  padding: 21px 0;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -19,12 +19,37 @@
   border-top: 1px solid #e6e6e6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .site-list {
     font-family: "Oswald-Regular", "Arial", sans-serif;
   }
 
   .site-list__item {
     border: none;
+  }
+
+  .site-list__link {
+    color: #222222;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 18px 0 7px 0;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+  }
+
+  .site-list--index .site-list__link {
+    color: #ffffff;
+  }
+
+  .site-list--index .site-list__item--active {
+    border-color: #ffffff;
   }
 }
