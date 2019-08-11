@@ -40,6 +40,9 @@
       <section class="promo">
         <p class="promo__title">Занялся собой? Займись котом!</p>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Питание для котов" srcset="img/index-can-mobile@2x.png 2x">
@@ -80,20 +83,29 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+                <svg class="social__icon social__icon--instagram" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
