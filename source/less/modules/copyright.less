@@ -4,8 +4,20 @@
   align-items: center;
 }
 
+.copyright__link {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__icon {
   margin: 22px 0;
+  fill: #666666;
 }
 
 .copyright__text {
