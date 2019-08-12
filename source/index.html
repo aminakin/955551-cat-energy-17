@@ -4,12 +4,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Кэт энерджи</title>
   </head>
 
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo">
         <picture>
@@ -85,19 +88,19 @@
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+                <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Мы в Инстаграме</span>
-                <svg class="social__icon social__icon--instagram" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+                <svg class="social__icon social__icon--instagram" width="17" height="17"><use xlink:href="#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+                <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
               </a>
             </li>
           </ul>
@@ -105,7 +108,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
+            <svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
