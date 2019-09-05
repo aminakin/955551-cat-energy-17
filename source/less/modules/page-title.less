@@ -11,6 +11,13 @@
     text-align: left;
     border-top: 1px solid #e6e6e6;
   }
+
+  &--form {
+    color: black;
+    text-align: left;
+    line-height: 60px;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -20,5 +27,17 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+
+    &--form {
+      margin-left: 29px;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title--form {
+    margin-top: 71px;
+    margin-left: 38px;
   }
 }

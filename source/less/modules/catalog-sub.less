@@ -1,0 +1,171 @@
+.catalog-sub {
+  margin-top: 28px;
+}
+
+.catalog-sub__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 0 19px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 14px;
+  }
+}
+
+.catalog-sub__list {
+  list-style: none;
+  padding: 0 20px 0 20px;
+  margin: 34px 0 0 0;
+}
+
+.catalog-sub__gift {
+  width: 280px;
+  height: 289px;
+  margin: 39px auto 0 auto;
+  padding-top: 65px;
+  box-sizing: border-box;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
+.product-sub__gitt-icon {
+  margin: 0 auto;
+  fill: #ffffff;
+  display: block;
+}
+
+.catalog-sub__promo-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 170px;
+  margin: 62px auto 0 auto;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-sub {
+    margin-top: 63px;
+  }
+
+  .catalog-sub__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 0 0 67px;
+
+    &::after {
+      width: 327px;
+      top: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+      left: 0;
+      top: 22px;
+    }
+  }
+
+  .catalog-sub__list {
+    padding: 0 30px;
+    margin-top: 80px;
+  }
+
+  .catalog-sub__gift {
+    width: 708px;
+    height: 200px;
+    margin: 69px auto 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+  }
+
+  .product-sub__gitt-icon {
+    margin: 65px 277px 0 91px;
+  }
+
+  .catalog-sub__promo-text {
+    margin: 72px 0 0 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-sub {
+    margin-top: 72px;
+  }
+
+  .catalog-sub__title {
+    padding-left: 39px;
+
+    &::after {
+      width: 887px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .catalog-sub__wrapper {
+    display: flex;
+    margin-top: 80px;
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+
+  .catalog-sub__gift {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+
+  .catalog-sub__list {
+    width: 895px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-sub__gitt-icon {
+    margin: 65px auto 62px auto;
+  }
+
+  .catalog-sub__promo-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}

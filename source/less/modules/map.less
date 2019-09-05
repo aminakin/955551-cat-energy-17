@@ -1,0 +1,35 @@
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map__pin {
+  position: absolute;
+  top: 140px;
+  left: 129px;
+}
+
+@media (min-width: @tablet-width) {
+  .map__image {
+    width: 767px;
+  }
+
+  .map__pin {
+    top: 146px;
+    left: 322px;
+    width: 125px;
+    height: 106px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__image {
+    width: 1300px;
+    top: auto;
+  }
+
+  .map__pin {
+    top: 149px;
+    left: 927px;
+  }
+}
