@@ -1,5 +1,6 @@
 .catalog-sub {
   margin-top: 28px;
+  position: relative;
 }
 
 .catalog-sub__title {
@@ -8,17 +9,6 @@
   font-weight: normal;
   margin: 0 0 0 19px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 53px;
-    height: 3px;
-    background-color: #68b738;
-    right: 0;
-    top: 14px;
-  }
 }
 
 .catalog-sub__list {
@@ -65,24 +55,10 @@
   .catalog-sub__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
-    padding: 0 0 0 67px;
-
-    &::after {
-      width: 327px;
-      top: 22px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 28px;
-      height: 3px;
-      background-color: #68b738;
-      left: 0;
-      top: 22px;
-    }
+    margin: 0 0 0 30px;
+    padding: 0 0 0 37px;
+    background-color: #ffffff;
+    width: 384px;
   }
 
   .catalog-sub__list {
@@ -121,21 +97,24 @@
   }
 
   .catalog-sub__title {
-    padding-left: 39px;
-
-    &::after {
-      width: 887px;
-    }
+    padding-left: 0;
+    width: 373px;
 
     &::before {
-      display: none;
+      content: "";
+      height: 36px;
+      width: 40px;
+      display: block;
+      background-color: #ffffff;
+      position: absolute;
+      left: -40px;
     }
   }
 
   .catalog-sub__wrapper {
     display: flex;
     margin-top: 80px;
-    padding: 0 40px;
+    padding: 0;
     justify-content: space-between;
   }
 

@@ -1,0 +1,25 @@
+@media (min-width: @tablet-width) {
+  .green-line {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+    top: 22px;
+    z-index: -1;
+    transform: translateX(-50%);
+    margin-left: 49.3%;
+  }
+
+  .green-line--catalog {
+    margin-left: 50%;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .green-line--catalog {
+    margin-left: 49.3%;
+  }
+}

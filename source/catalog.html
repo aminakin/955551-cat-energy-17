@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Каталог продукции</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -14,7 +18,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -236,6 +240,7 @@
       </section>
       <section class="catalog-sub">
         <h2 class="catalog-sub__title">Дополнительные товары</h2>
+        <div class="green-line"></div>
         <div class="catalog-sub__wrapper">
         <ul class="catalog-sub__list">
           <li class="catalog-sub__item product-sub">
@@ -293,27 +298,20 @@
         </div>
         </div>
       </section>
+    </main>
+    <footer class="page-footer">
       <section class="contacts contacts--catalog">
         <div class="contacts__appeal">
           <p class="contacts__partnership">Приглашаем<br>к сотрудничеству дилеров!</p>
           <address class="contacts__assddress">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</address>
         </div>
         <div class="contacts__map map">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта" srcset="img/bg-map-mobile@2x.png 2x">
-          </picture>
+          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6065404542185!2d30.31777954026207!3d59.93867079984507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1567795329093!5m2!1sru!2sru" width="100%" height="365" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <img class="map__pin" src="img/map-pin.png" width="62" height="59" alt="Логотип на карте">
         </div>
       </section>
-    </main>
-    <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин Кэт энерджи">
         </a>
         <div class="page-footer__social social">

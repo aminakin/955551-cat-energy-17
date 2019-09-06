@@ -63,13 +63,24 @@
 @media (min-width: @desktop-width) {
   .promo {
     position: absolute;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: 111.5% 0%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1300px;
+    width: 1220px;
     height: 696px;
     top: 0;
+  }
+
+  .promo__wide-background {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100vw;
+    max-width: 1400px;
+    height: 696px;
+    transform: translateX(-50%);
+    margin-left: 49.3%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 656px 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: -1;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -84,17 +95,17 @@
     height: 499px;
     margin: 0;
     top: 142px;
-    right: 258px;
+    right: 218px;
   }
 
   .promo__title {
-    margin-left: 119px;
+    margin-left: 79px;
     padding-top: 342px;
   }
 
   .promo__button {
     position: relative;
     top: auto;
-    margin: 53px 0 0 118px;
+    margin: 53px 0 0 78px;
   }
 }

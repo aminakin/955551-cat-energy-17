@@ -84,19 +84,19 @@
     border: none;
     background-color: #f2f2f2;
     margin: 35px 0 0 0;
-    position: relative;
     padding-bottom: 70px;
+    position: relative;
   }
 
   .changes__title {
     background-color: #ffffff;
     margin: 0;
-    padding: 0 0 75px 40px;
+    padding: 0 0 75px 0;
   }
 
   .changes__description {
     width: 435px;
-    margin: 71px 0 0 40px;
+    margin: 71px 0 0 0;
   }
 
   .changes__statistics {
@@ -108,7 +108,7 @@
     padding: 0;
     position: absolute;
     top: -55px;
-    right: 0;
+    right: -30px;
     background-color: transparent;
   }
 
@@ -120,5 +120,18 @@
 
   .changes__toggle {
     margin: 38px 0 0 79px;
+  }
+
+  .changes__wide-background {
+    content: "";
+    display: block;
+    width: 100vw;
+    transform: translateX(-50%);
+    margin-left: 49.3%;
+    height: 462px;
+    background-color: #f2f2f2;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
   }
 }
